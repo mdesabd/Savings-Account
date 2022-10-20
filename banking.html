@@ -7,18 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking Site</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind source -->
 </head>
+
+
 
 <body>
     <!--header part-->
     <header>
-        <h1 class="text-7xl text-center mt-20 text-blue-800 font-black">
+        <h1 class=" text-7xl text-center mt-20 text-blue-800 font-black">
             Welcome to Savings Account!!
         </h1>
     </header>
 
+
     <!--Main part-->
-    <main class="w-3/4 mx-auto">
+    <main class="w-3/4 mx-auto ">
+
 
 
         <!-- Blance & Tranhection section -->
@@ -43,34 +48,34 @@
 
 
 
-        <!-- Diposit and Withdraw... -->
-        <section class="mt-10">
+        <!-- Diposit and Withdraw section -->
+        <section class="mt-16">
 
             <div class="grid grid-cols-2 gap-4">
                 <div class=" bg-blue-300 p-10 rounded-lg">
                     <h3 class="text-3xl font-black text-">Please Deposit</h3>
-                    <input id="usar-password" class="block mb-10 p-3 mt-4 w-64 border-2 border-blue-600 rounded-lg "
-                        type="text" placeholder="Enter Your Ammount">
+                    <input id="diposit-input" class="block mb-10 p-3 mt-4 w-64 border-2 border-blue-600 rounded-lg "
+                        type="text" placeholder="$ Enter Diposit Ammount">
 
-                    <button id="login-submit"
-                        class="outline outline-offset-2 outline-blue-500 bg-orange-600 text-white font-black block mb-4 p-2.5  w-32  border-2 border-black-600 rounded-lg text-xl">Submit</button>
+                    <button id="diposit-button"
+                        class="outline outline-offset-2 outline-blue-500 bg-orange-600 text-white font-black block mb-4 p-2.5  w-32  border-2 border-black-600 rounded-lg text-xl">Diposit</button>
                 </div>
 
 
                 <div class=" bg-cyan-300 p-10 rounded-lg">
                     <h3 class="text-3xl font-black text-">Withdraw</h3>
-                    <input id="usar-password" class="block mb-10 p-3 mt-4 w-64 border-2 border-blue-600 rounded-lg "
-                        type="text" placeholder="Enter Your Ammount">
+                    <input id="withdraw-input" class="block mb-10 p-3 mt-4 w-64 border-2 border-blue-600 rounded-lg "
+                        type="text" placeholder="$ Enter Withdraw Ammount">
 
-                    <button id="login-submit"
-                        class="outline outline-offset-2 outline-cyan-500 bg-orange-600 text-white font-black block mb-4 p-2.5  w-32  border-2 border-black-600 rounded-lg text-xl">Submit</button>
+                    <button id="withdraw-button"
+                        class="outline outline-offset-2 outline-cyan-500 bg-orange-600 text-white font-black block mb-4 p-2.5  w-32  border-2 border-black-600 rounded-lg text-xl">Withdraw<button>
                 </div>
             </div>
         </section>
-        <!-- Diposit and withdwra section -->
+    </main>
 
-    </main>[]
-
+    
+    <script src="js/banking.js"></script>
 </body>
 
 </html>
