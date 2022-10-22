@@ -21,7 +21,7 @@ document.getElementById('diposit-button').addEventListener('click', function () 
     const newDepositeTotal = parseFloat(previousDepositAmount) + parseFloat(newdepositAmmount);
     depositTotal.innerText = newDepositeTotal;
 
-// **********************************************************************************
+    // **********************************************************************************
 
 
     //update acount blance---
