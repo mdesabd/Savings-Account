@@ -25,17 +25,11 @@ document.getElementById('diposit-button').addEventListener('click', function () 
 
     //******************************************************************************/
 
-
-
-
     //update acount blance---
     const balanceTotal = document.getElementById('balance-total');
     const previousBalanceTotal = balanceTotal.innerText;
     const newBalanceTotal = parseFloat(newdepositAmmount) + parseFloat(previousBalanceTotal);
     balanceTotal.innerText = newBalanceTotal;
-
-
-
 
     // if (newdepositAmmount >= 0) {
     //     depositTotal.innerText >= 0;
@@ -45,18 +39,9 @@ document.getElementById('diposit-button').addEventListener('click', function () 
     //     depositTotal.innerText != NaN;
     // }
 
-
-
-
     //clear the deposite inputfield
     dipositField.value = '';
-
-
 })
-
-
-
-
 
 
 document.getElementById('withdraw-button').addEventListener('click', function () {
@@ -66,23 +51,15 @@ document.getElementById('withdraw-button').addEventListener('click', function ()
     const newWithdrawAmount = withdrawField.value;
     console.log(newWithdrawAmount);
 
-
-
     //Update withdraw and balance ----
-
-
 
     const WithdrawTotal = document.getElementById('withdray-total');
     const previousWithdrawAmount = WithdrawTotal.innerText;
     const withdrawTotalAmount = parseFloat(previousWithdrawAmount) + parseFloat(newWithdrawAmount);
     WithdrawTotal.innerText = withdrawTotalAmount;
 
-
-    
     //clear the withdray inputfield
     withdrawField.value = '';
-
-
 
     const balanceTotal = document.getElementById('balance-total');
     const previousBalanceTotal = balanceTotal.innerText;
