@@ -21,7 +21,7 @@ document.getElementById('diposit-button').addEventListener('click', function () 
     const newDepositeTotal = parseFloat(previousDepositAmount) + parseFloat(newdepositAmmount);
     depositTotal.innerText = newDepositeTotal;
 
-    // **********************************************************************************
+    //******************************************************************************/
 
 
     //update acount blance---
@@ -29,6 +29,17 @@ document.getElementById('diposit-button').addEventListener('click', function () 
     const previousBalanceTotal = balanceTotal.innerText;
     const newBalanceTotal = parseFloat(newdepositAmmount) + parseFloat(previousBalanceTotal);
     balanceTotal.innerText = newBalanceTotal;
+
+
+
+    // if (newdepositAmmount >=  0) {
+    //     const newDepositeTotal = parseFloat(previousDepositAmount) + parseFloat(newdepositAmmount);
+    // }
+
+    // else {
+    //     console.log('you are not a valid usar');
+    // }
+
 
     //clear the deposite inputfield
     dipositField.value = '';
