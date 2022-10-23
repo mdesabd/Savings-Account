@@ -67,3 +67,4 @@ document.getElementById('withdraw-button').addEventListener('click', function ()
     balanceTotal.innerText = newBalanceTotal;
 
 })
+
