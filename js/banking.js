@@ -8,6 +8,8 @@
 // // এবার কনসোলে গিয়ে  ইনপুট ডাটা লিখে বাটনে তিপ দিয়ে দেখ কনসোলে ডাটা আসে কিনা তাহলে ---ওকে//
 // })
 //****************************************************************** */
+
+
 //get diposit value=============================================================
 document.getElementById('diposit-button').addEventListener('click', function () {
 
@@ -24,6 +26,8 @@ document.getElementById('diposit-button').addEventListener('click', function () 
     //******************************************************************************/
 
 
+
+
     //update acount blance---
     const balanceTotal = document.getElementById('balance-total');
     const previousBalanceTotal = balanceTotal.innerText;
@@ -32,19 +36,26 @@ document.getElementById('diposit-button').addEventListener('click', function () 
 
 
 
-    // if (newdepositAmmount >=  0) {
-    //     const newDepositeTotal = parseFloat(previousDepositAmount) + parseFloat(newdepositAmmount);
+
+    // if (newdepositAmmount >= 0) {
+    //     depositTotal.innerText >= 0;
     // }
 
-    // else {
-    //     console.log('you are not a valid usar');
+    // else if (newdepositAmmount >= 0) {
+    //     depositTotal.innerText != NaN;
     // }
+
+
 
 
     //clear the deposite inputfield
     dipositField.value = '';
 
+
 })
+
+
+
 
 
 
@@ -56,13 +67,18 @@ document.getElementById('withdraw-button').addEventListener('click', function ()
     console.log(newWithdrawAmount);
 
 
+
     //Update withdraw and balance ----
+
+
 
     const WithdrawTotal = document.getElementById('withdray-total');
     const previousWithdrawAmount = WithdrawTotal.innerText;
     const withdrawTotalAmount = parseFloat(previousWithdrawAmount) + parseFloat(newWithdrawAmount);
     WithdrawTotal.innerText = withdrawTotalAmount;
 
+
+    
     //clear the withdray inputfield
     withdrawField.value = '';
 
